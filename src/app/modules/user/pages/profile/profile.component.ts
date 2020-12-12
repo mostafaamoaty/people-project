@@ -8,7 +8,7 @@ import { User } from 'src/app/shared/models/user';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
-  profile?: User;
+  profile!: User;
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
