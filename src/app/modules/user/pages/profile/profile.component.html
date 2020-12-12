@@ -1,0 +1,18 @@
+<div class="container">
+  <h3>My Profile</h3>
+  <ul class="profile">
+    <li>{{ profile?.name }}</li>
+    <li>Graduation: {{ profile?.graduation }}</li>
+    <li>Date of birth: {{ profile?.birthdate }}</li>
+  </ul>
+  <div class="edit-profile">
+    <p>Update your profile</p>
+    <label><input [(ngModel)]="profile.name" placeholder="name" /></label>
+    <label
+      ><input [(ngModel)]="profile.graduation" placeholder="graduation"
+    /></label>
+    <label
+      ><input [(ngModel)]="profile.birthdate" placeholder="birthdate"
+    /></label>
+  </div>
+</div>

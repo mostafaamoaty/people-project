@@ -1,0 +1,39 @@
+.system-status {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.system-status p {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.status-button {
+  margin-left: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.Green {
+  background-color: #4caf50;
+  border-color: green;
+  color: white;
+}
+
+.Yellow {
+  background-color: yellow;
+  border-color: rgb(161, 161, 0);
+  color: black;
+}
+
+.Red {
+  background-color: red;
+  border-color: rgb(90, 1, 1);
+  color: white;
+}

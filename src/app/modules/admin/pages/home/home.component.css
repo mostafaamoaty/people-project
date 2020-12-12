@@ -1,0 +1,12 @@
+.container {
+  margin: 50px 20px;
+  width: 70%;
+}
+
+.article h3,
+.article p {
+  margin: 20px 20px 0 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 7px;
+}

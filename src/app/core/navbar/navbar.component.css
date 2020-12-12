@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  margin: 0;
+}
+
+.nav a {
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
+  margin: 0;
+  padding: 15px 50px;
+  border: 1px solid #222222;
+}
+
+.nav li {
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
+  margin: 0;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+
+.nav li a:active {
+  color: white;
+  background-color: #9c0027;
+  border: 2px solid #720109;
+}
+
+.active a {
+  color: white;
+  background-color: #9c0027;
+  border: 2px solid #720109;
+}
+
+.badge {
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  color: white;
+}

@@ -1,0 +1,26 @@
+.container {
+  margin-top: 32px;
+  padding: 64px 0px;
+  background-color: #222222;
+}
+
+nav a {
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
+  margin: 0;
+  padding: 16px 50px;
+}
+
+nav ul li {
+  padding: 64px 0;
+  list-style: none;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+nav ul li a:active {
+  background-color: green;
+}

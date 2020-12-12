@@ -1,0 +1,11 @@
+<div class="container">
+  <app-side-menu></app-side-menu>
+  <div class="content">
+    <app-system-status></app-system-status>
+    <ul class="people">
+      <li *ngFor="let user of people">
+        <span>{{ user.id }}.</span> {{ user.name }}
+      </li>
+    </ul>
+  </div>
+</div>
