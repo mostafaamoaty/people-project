@@ -1,0 +1,18 @@
+<div class="container">
+  <nav>
+    <ul>
+      <li
+        (click)="onSelect('full-timers')"
+        [class.selected]="selectedClass === 'full-timers'"
+      >
+        Full-Timers
+      </li>
+      <li
+        (click)="onSelect('part-timers')"
+        [class.selected]="selectedClass === 'part-timers'"
+      >
+        Part-Timers
+      </li>
+    </ul>
+  </nav>
+</div>

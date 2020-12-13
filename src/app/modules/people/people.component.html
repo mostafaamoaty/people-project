@@ -1,0 +1,19 @@
+<div class="container">
+  <app-side-menu (selectedGroup)="getSelectedPeople($event)"></app-side-menu>
+  <div *ngIf="selectedPeople === ''">
+    <div class="content">
+      <app-system-status></app-system-status>
+      <ul class="people">
+        <li *ngFor="let user of people">
+          <span>{{ user.id }}.</span> {{ user.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="selectedPeople === 'part-timers'">
+    <app-part-timers></app-part-timers>
+  </div>
+  <div *ngIf="selectedPeople === 'full-timers'">
+    <app-full-timers></app-full-timers>
+  </div>
+</div>

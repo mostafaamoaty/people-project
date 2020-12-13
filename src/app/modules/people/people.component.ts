@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { User } from '../../../../shared/models/user';
-import { PeopleService } from '../../../../core/services/people/people.service';
+import { PeopleService } from 'src/app/core/services/people/people.service';
+import { User } from 'src/app/shared/models/user';
 
 @Component({
   selector: 'app-people',
@@ -8,8 +8,8 @@ import { PeopleService } from '../../../../core/services/people/people.service';
   styleUrls: ['./people.component.css'],
 })
 export class PeopleComponent implements OnInit {
-  @Output() people: User[] | undefined;
-
+  people!: User[];
+  selectedPeople: string = '';
   constructor(private peopleService: PeopleService) {}
 
   ngOnInit(): void {
@@ -18,5 +18,9 @@ export class PeopleComponent implements OnInit {
 
   getPeople(): void {
     this.people = this.peopleService.getPeople();
+  }
+
+  getSelectedPeople($event: string) {
+    this.selectedPeople = $event;
   }
 }

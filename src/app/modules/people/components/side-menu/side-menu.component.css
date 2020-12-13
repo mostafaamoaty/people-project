@@ -4,23 +4,25 @@
   background-color: #222222;
 }
 
-nav a {
-  color: #aaaaaa;
-  transition: all 0.3s ease 0s;
-  margin: 0;
-  padding: 16px 50px;
-}
-
 nav ul li {
-  padding: 64px 0;
+  padding: 13px 50px;
+  margin: 10px 0;
   list-style: none;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
   background-color: black;
   color: white;
 }
-nav ul li a:active {
+nav ul li:active {
   background-color: green;
+}
+
+.selected {
+  background-color: green;
+  color: white !important;
 }
