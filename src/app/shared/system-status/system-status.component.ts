@@ -11,12 +11,13 @@ export class SystemStatusComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getServerStatus();
+  }
 
-  getServerStatus() {
+  getServerStatus(): void {
     this.selectedStatus = this.status[
       Math.floor(Math.random() * this.status.length)
     ];
-    return this.selectedStatus;
   }
 }
