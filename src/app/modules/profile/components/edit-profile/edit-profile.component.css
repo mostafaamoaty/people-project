@@ -1,0 +1,10 @@
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+p {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,34 @@
+.container {
+  margin-top: 32px;
+  padding: 64px 0px;
+  background-color: #222222;
+}
+
+nav ul li {
+  padding: 13px 50px;
+  margin: 10px 0;
+  list-style: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: #aaaaaa;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+nav ul li:hover {
+  background-color: black;
+  color: white;
+}
+nav ul li:active {
+  background-color: green;
+}
+
+.selected {
+  background-color: green;
+  color: white !important;
+}
+
+.active {
+  background-color: green;
+  color: white !important;
+}
